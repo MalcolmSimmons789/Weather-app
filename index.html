@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <script src="weather.js"></script>
+    <script src="weather.js" defer></script>
     <link rel="stylesheet" href="style.css" />
     <title>Today's Weather</title>
   </head>
@@ -34,19 +34,20 @@
           </svg>
         </button>
       </div>
-      <div class="weather"></div>
-      <h2 class="city">Weather In Denver</h2>
-      <h1 class="temp">51°F</h1>
-      <div class="flex">
-        <img
-          src="https://openweathermap.org/img/wn/04n.png"
-          alt=""
-          class="icon"
-        />
-        <div class="description">Cloudy</div>
+      <div class="weather loading">
+        <h2 class="city">Weather In Denver</h2>
+        <h1 class="temp">51°F</h1>
+        <div class="flex">
+          <img
+            src="https://openweathermap.org/img/wn/04n.png"
+            alt=""
+            class="icon"
+          />
+          <div class="description">Cloudy</div>
+        </div>
+        <div class="humidity">Humidity: 60%</div>
+        <div class="wind">Wind speed: 6.2 mph</div>
       </div>
-      <div class="humidity">Humidity: 60%</div>
-      <div class="wind">Wind speed: 6.2 mph</div>
     </div>
   </body>
 </html>
